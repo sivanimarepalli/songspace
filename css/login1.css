@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: white;
+}
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #1fdf64;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #121212;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+}
+
+input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="password"]::placeholder {
+    color: #777;
+}
+
+.btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #1fdf64;
+    border: none;
+    border-radius: 25px;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1db954;
+}
+
+.extra {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.extra span {
+    display: block;
+    margin-top: 10px;
+}
+
+.login-container, .signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box, .signup-box {
+    background-color: #181818;
+    padding: 40px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 480px) {
+    .login-box, .signup-box {
+        width: 90%;
+        padding: 20px;
+    }
+}
